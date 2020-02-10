@@ -36,7 +36,7 @@
 }
 
 .centered {
-	text-align: center
+	text-align: center;
 }
 
 .mt {
@@ -44,12 +44,10 @@
 }
 
 .mb {
+  display: flex;
+  flex-wrap: wrap;
 	margin-bottom: 80px;
 }
-
-/* ==========================================================================
-   General styles
-   ========================================================================== */
 
 
 body {
@@ -64,6 +62,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
     color: #4a4a4a;
+  text-align: center;
 }
 
 
@@ -131,27 +130,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #headerwrap h1 {
-	color:#db7093;
+	color:#f0224e81;
 	padding-top: 10px;
 	padding-bottom: 20px;
-	letter-spacing: 4px;
 	font-size: 80px;
 	font-weight: bold;
 }
 
-#headerwrap h3 {
+#headerwrap h2 {
 	font-weight: 400;
-	color:#db7093;
+	color:#6d6306f1;
 }
 
 @media (max-width: 768px) {
   #headerwrap {
     padding-top: 180px;
   }
+  .mb{
+    display: block;
+  }
+  .gallery{
+    width: 100% !important;
+  }
 }
 
 #social {
-	padding-top: 50px;
+	margin-top: 50px;
 	padding-bottom: 50px;
 	background-color: #f2f2f2;
 }
@@ -163,6 +167,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #social i:hover {
 	color: #1abc9c
+}
+
+#social p {
+	text-align: center;
 }
 
 #footerwrap {
@@ -235,7 +243,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Gallery */
 .gallery {
-	margin-top: 30px;
+  margin-top: 30px;
+  width: 33.3%;
+  margin: 0;
 }
 
 .gallery img:hover {
@@ -404,4 +414,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .credits {
   color: #999;
+}
+
+ul.origin {
+  color: #1e366a;
+  border-top: solid #1e366a 1px;/*上のボーダー*/
+  border-bottom: solid #1e366a 1px;/*下のボーダー*/
+  padding: 0.5em 0 0.5em 1.5em;
+  width: 300px;
+  margin: auto;
+}
+
+ul.origin li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style: none;
+}
+
+details {
+  transition: .5s;
+}
+
+summary {
+  cursor: pointer;
 }
