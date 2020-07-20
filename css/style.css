@@ -142,8 +142,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #headerwrap h2 {
-	font-weight: 400;
+	font-weight: 600;
   color:#6d6306f1;
+  font-size: 35px;
   text-shadow:  2px  2px 10px rgb(255, 255, 255) ,
                -2px  2px 10px rgb(255, 255, 255) ,
                 2px -2px 10px rgb(255, 255, 255) ,
@@ -300,7 +301,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-form label {
-   color: #999;
+  color: rgb(149, 113, 35);
 }
 
 .contact-form input, .contact-form textarea {
@@ -445,4 +446,18 @@ details {
 
 summary {
   cursor: pointer;
+}
+
+
+div#matcha{
+  color: rgb(44, 134, 36);
+  font-weight: bold;
+}
+div#paris{
+  color: rgb(197, 22, 22);
+  font-weight: bold;
+}
+div#rokubori{
+  color: rgb(11, 12, 56);
+  font-weight: bold;
 }
